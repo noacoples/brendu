@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brenda Asnicar</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="atmosphere">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div>
+  <div class="star" style="top:12%;left:20%;width:3px;height:3px;"></div>
+  <div class="star" style="top:20%;left:64%;width:2px;height:2px;animation-delay:.6s;"></div>
+  <div class="star" style="top:8%;left:80%;width:2px;height:2px;animation-delay:1.4s;"></div>
+  <div class="star" style="top:34%;left:38%;width:2px;height:2px;animation-delay:2s;"></div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="#" data-tab="inicio">Brenda Asnicar</a>
+    <nav class="tabs" id="navTabs">
+      <button data-tab="tour"><span class="gem"></span>Tour</button>
+      <button data-tab="fotos"><span class="gem"></span>Fotos</button>
+      <button data-tab="videos"><span class="gem"></span>Videos</button>
+      <button data-tab="info"><span class="gem"></span>Información</button>
+      <button data-tab="tienda"><span class="gem"></span>Tienda</button>
+      <button data-tab="club"><span class="gem"></span>Secret Club</button>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="accountBtn" title="Mi cuenta" data-tab="club">♡</button>
+      <button class="icon-btn" id="cartBtn" title="Carrito">
+        ⌘<span class="badge" id="cartBadge" style="display:none;">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO / INICIO ===== -->
+  <section class="section active" id="sec-inicio">
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Sitio oficial · Era Holograma</div>
+        <h1 class="wordmark" style="font-size:clamp(2.6rem,7vw,4.6rem);">Brenda<br>Asnicar</h1>
+        <p class="sub">Descubre las fechas de gira, la tienda oficial y el Secret Club — el rincón solo para quienes ya forman parte del cristal.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" data-tab="tienda">Ir a la tienda</button>
+          <button class="btn btn-ghost" data-tab="club">Entrar al Secret Club</button>
+        </div>
+      </div>
+      <div class="crystal-stage">
+        <div class="moon"></div>
+        <div class="crystal s1 small"></div>
+        <div class="crystal"></div>
+        <div class="crystal s2 small"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOUR ===== -->
+  <section class="section" id="sec-tour">
+    <div class="section-head">
+      <div class="eyebrow">Gira Holograma 2026</div>
+      <h2>Fechas de tour</h2>
+      <p>Cada entrada incluye acceso a la sesión acústica previa a puertas. Añade tu entrada al carrito para asegurarla.</p>
+    </div>
+    <div class="tour-list" id="tourList"></div>
+  </section>
+
+  <!-- ===== FOTOS ===== -->
+  <section class="section" id="sec-fotos">
+    <div class="section-head">
+      <div class="eyebrow">Archivo visual</div>
+      <h2>Fotos</h2>
+      <p>Instantáneas de estudio, gira y backstage.</p>
+    </div>
+    <div class="grid" id="photoGrid"></div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="section" id="sec-videos">
+    <div class="section-head">
+      <div class="eyebrow">En movimiento</div>
+      <h2>Videos</h2>
+      <p>Videoclips, sesiones en vivo y detrás de cámaras.</p>
+    </div>
+    <div class="grid" id="videoGrid"></div>
+  </section>
+
+  <!-- ===== INFO ===== -->
+  <section class="section" id="sec-info">
+    <div class="section-head">
+      <div class="eyebrow">Sobre la artista</div>
+      <h2>Información</h2>
+    </div>
+    <div class="info-grid">
+      <div>
+        <p style="color:var(--gold);font-size:0.82rem;font-weight:700;">[Placeholder — reemplazar con la biografía oficial real]</p>
+        <p>Brenda Asnicar combina actuación y música en un universo pop brillante, personal y en constante transformación. Esta sección está lista para recibir su biografía oficial: trayectoria, proyectos actuales y la historia detrás de la era Holograma.</p>
+        <p>Sugerencia de estructura: un párrafo de presentación, un párrafo de trayectoria/logros, y un cierre sobre el proyecto o gira actual.</p>
+      </div>
+      <div class="contact-card facet">
+        <h3>Contacto y prensa</h3>
+        <div class="contact-row"><span>Prensa</span><span>prensa@brendaasnicar.example</span></div>
+        <div class="contact-row"><span>Management</span><span>management@brendaasnicar.example</span></div>
+        <div class="contact-row"><span>Booking</span><span>booking@brendaasnicar.example</span></div>
+        <div class="social-row">
+          <a href="#" title="Instagram">IG</a>
+          <a href="#" title="TikTok">TT</a>
+          <a href="#" title="Spotify">SP</a>
+          <a href="#" title="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIENDA ===== -->
+  <section class="section" id="sec-tienda">
+    <div class="section-head">
+      <div class="eyebrow">Tienda oficial</div>
+      <h2>Merchandising</h2>
+      <p>Piezas de la era Holograma. Envío a toda Latinoamérica y España.</p>
+    </div>
+    <div class="store-note" id="storeNote">✧ Inicia sesión en el Secret Club para guardar tu historial de pedidos y recibir 15% de descuento.</div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ===== SECRET CLUB ===== -->
+  <section class="section" id="sec-club">
+
+    <div id="clubLoggedOut">
+      <div class="club-hero">
+        <div class="gem-icon"></div>
+        <h2>Secret Club</h2>
+        <p style="color:var(--dim);margin-top:10px;">Un rincón solo para quienes ya forman parte del cristal: contenido exclusivo, descuentos y tu historial de pedidos.</p>
+      </div>
+      <div class="auth-wrap facet">
+        <div class="auth-toggle">
+          <button id="toggleLogin" class="active">Iniciar sesión</button>
+          <button id="toggleRegister">Crear cuenta</button>
+        </div>
+
+        <form class="auth-panel active" id="loginPanel">
+          <div class="field"><label for="loginEmail">Correo</label><input type="email" id="loginEmail" required autocomplete="email"></div>
+          <div class="field"><label for="loginPassword">Contraseña</label><input type="password" id="loginPassword" required autocomplete="current-password"></div>
+          <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+          <div class="form-error" id="loginError"></div>
+        </form>
+
+        <form class="auth-panel" id="registerPanel">
+          <div class="field"><label for="regName">Nombre</label><input type="text" id="regName" required autocomplete="name"></div>
+          <div class="field"><label for="regEmail">Correo</label><input type="email" id="regEmail" required autocomplete="email"></div>
+          <div class="field"><label for="regPassword">Contraseña</label><input type="password" id="regPassword" required minlength="6" autocomplete="new-password"></div>
+          <div class="field"><label for="regPassword2">Confirmar contraseña</label><input type="password" id="regPassword2" required minlength="6" autocomplete="new-password"></div>
+          <button type="submit" class="btn btn-primary btn-full">Crear mi cuenta</button>
+          <div class="form-error" id="registerError"></div>
+        </form>
+      </div>
+    </div>
+
+    <div id="clubLoggedIn" class="member-dash" style="display:none;">
+      <div class="member-welcome facet">
+        <div>
+          <h3>Bienvenida, <span id="memberName"></span> ✧</h3>
+          <p>Ya eres parte del cristal. Esto es solo para ti.</p>
+        </div>
+        <button class="btn btn-ghost" id="logoutBtn">Cerrar sesión</button>
+      </div>
+
+      <div class="perk-grid">
+        <div class="perk-card facet">
+          <div class="tag">Exclusivo</div>
+          <h4>Sesión acústica en casa</h4>
+          <p>Un video íntimo de la era Holograma, grabado solo para el Secret Club.</p>
+        </div>
+        <div class="perk-card facet">
+          <div class="tag">Beneficio</div>
+          <h4>15% en toda la tienda</h4>
+          <p>Usa tu código en el checkout.</p>
+          <div class="code-chip">MOONLIGHT15</div>
+        </div>
+      </div>
+
+      <div class="orders-block">
+        <h3>Historial de pedidos</h3>
+        <div id="ordersList"></div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Brenda Asnicar. Sitio oficial — prototipo de diseño con datos de ejemplo, pendiente de contenido real.
+</footer>
+
+<!-- cart overlay + drawer -->
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="cartDrawer">
+  <div class="drawer-head">
+    <h3 id="drawerTitle">Tu carrito</h3>
+    <button class="close-x" id="closeDrawer">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
